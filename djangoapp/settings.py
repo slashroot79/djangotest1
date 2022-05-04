@@ -53,12 +53,13 @@ ROOT_URLCONF = 'djangoapp.urls'
 
 
 
-BACKEND_APP_DIR = BASE_DIR
-FRONTEND_APP_DIR = BASE_DIR/'reactapp'
+# BACKEND_APP_DIR = BASE_DIR
+# FRONTEND_APP_DIR = BASE_DIR/'reactapp'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [FRONTEND_APP_DIR/'build'],
+        'DIRS':[],
+        # 'DIRS': [FRONTEND_APP_DIR/'build'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [FRONTEND_APP_DIR/'build/static']
+# STATICFILES_DIRS = [FRONTEND_APP_DIR/'build/static']
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

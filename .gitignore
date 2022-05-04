@@ -1,4 +1,4 @@
-djangoapp/__pycache__
+__pycache__/
 db.sqlite3
 reactapp/build/*
 reactapp/node_modules/*
